@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       //translations: LanguageTranslations(),
       locale: const Locale("en_US"),
       fallbackLocale: const Locale('en_US'),
-      initialRoute: AppRoutes.homeRoute,
+      initialRoute: AppRoutes.layoutRoute,
       getPages: AppPages.pages,
     );
   }

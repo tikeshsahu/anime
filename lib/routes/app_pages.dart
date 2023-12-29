@@ -12,15 +12,15 @@ import 'package:fox_anime/routes/app_routes.dart';
 
 class AppPages{
   static final List<GetPage> pages = [
-    // GetPage(
-    //   name: AppRoutes.layoutRoute,
-    //   page: () => const LayoutScreen(),
-    //   bindings: [
-    //     LayoutBinding(),
-    //     HomeBinding(),
-    //     ProfileBinding(),
-    //   ],
-    // ),
+    GetPage(
+      name: AppRoutes.layoutRoute,
+      page: () => const LayoutScreen(),
+      bindings: [
+        LayoutBinding(),
+        HomeBinding(),
+        ProfileBinding(),
+      ],
+    ),
     GetPage(
       name: AppRoutes.homeRoute, 
       page: () => const HomeScreen(), 
