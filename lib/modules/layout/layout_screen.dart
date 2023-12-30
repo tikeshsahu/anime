@@ -4,7 +4,6 @@ import 'package:fox_anime/modules/layout/layout_controller.dart';
 import 'package:fox_anime/modules/layout/widgets/nav_bar_widget.dart';
 import 'package:get/get.dart';
 
-
 class LayoutScreen extends StatelessWidget {
   const LayoutScreen({Key? key}) : super(key: key);
 
@@ -16,18 +15,18 @@ class LayoutScreen extends StatelessWidget {
       bottomNavigationBar: Container(
         height: 75,
         decoration: const BoxDecoration(
-            //color: Colors.red,
-            // borderRadius: BorderRadius.only(
-            //   topLeft: Radius.circular(AppDimension.normalRadius * 2),
-            //   topRight: Radius.circular(AppDimension.normalRadius * 2),
-            // ),
-            // boxShadow: [
-            //   BoxShadow(
-            //     color: AppTheme.themeBlackColor,
-            //     blurRadius: 2,
-            //   ),
-            // ],
-            ),
+          color: Colors.black,
+          // borderRadius: BorderRadius.only(
+          //   topLeft: Radius.circular(AppDimension.normalRadius * 2),
+          //   topRight: Radius.circular(AppDimension.normalRadius * 2),
+          // ),
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: AppTheme.themeBlackColor,
+          //     blurRadius: 2,
+          //   ),
+          // ],
+        ),
         child: Obx(
           () => Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,

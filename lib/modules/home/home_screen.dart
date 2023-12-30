@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
           // ),
         ],
       ),
-      bottomNavigationBar: const BottomNavigation(),
+      // bottomNavigationBar: const BottomNavigation(),
       body: SingleChildScrollView(
         // physics: const BouncingScrollPhysics(),
         // key: const Key('movieScrollView'),
@@ -77,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
-                        children:  [
+                        children: [
                           Text(
                             "seeMore".tr,
                             style: const TextStyle(
@@ -129,7 +129,7 @@ class HomeScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
-                        children:  [
+                        children: [
                           Text(
                             "seeMore".tr,
                             style: const TextStyle(
@@ -182,7 +182,7 @@ class HomeScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
-                        children:  [
+                        children: [
                           Text(
                             "seeMore".tr,
                             style: const TextStyle(

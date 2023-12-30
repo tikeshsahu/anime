@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fox_anime/components/popular.dart';
 import 'package:fox_anime/constants/app_constants.dart';
+import 'package:fox_anime/routes/app_routes.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AnimeDetailsScreen extends StatelessWidget {
@@ -24,27 +26,30 @@ class AnimeDetailsScreen extends StatelessWidget {
                 flexibleSpace: FlexibleSpaceBar(
                   background: FadeIn(
                     duration: const Duration(milliseconds: 500),
-                    child: ShaderMask(
-                      shaderCallback: (rect) {
-                        return const LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.transparent,
-                            Colors.black,
-                            Colors.black,
-                            Colors.transparent,
-                          ],
-                          stops: [0.0, 0.5, 1.0, 1.0],
-                        ).createShader(
-                          Rect.fromLTRB(0.0, 0.0, rect.width, rect.height),
-                        );
-                      },
-                      blendMode: BlendMode.dstIn,
-                      child: CachedNetworkImage(
-                        width: MediaQuery.of(context).size.width,
-                        imageUrl: AppConstants.imageUrl,
-                        fit: BoxFit.cover,
+                    child: GestureDetector(
+                      onTap: () => Get.toNamed(AppRoutes.videoPlayerRoute),
+                      child: ShaderMask(
+                        shaderCallback: (rect) {
+                          return const LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Colors.transparent,
+                              Colors.black,
+                              Colors.black,
+                              Colors.transparent,
+                            ],
+                            stops: [0.0, 0.5, 1.0, 1.0],
+                          ).createShader(
+                            Rect.fromLTRB(0.0, 0.0, rect.width, rect.height),
+                          );
+                        },
+                        blendMode: BlendMode.dstIn,
+                        child: CachedNetworkImage(
+                          width: MediaQuery.of(context).size.width,
+                          imageUrl: AppConstants.imageUrl,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
