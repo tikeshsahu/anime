@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fox_anime/utils/dependency_injection.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:fox_anime/app.dart';
 
@@ -13,6 +14,7 @@ import 'package:fox_anime/app.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
+  DependencyInjection.init();
   // await Firebase.initializeApp();
   // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   // await FlutterDownloader.initialize(debug: true, ignoreSsl: true);

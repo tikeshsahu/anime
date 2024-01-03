@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fox_anime/constants/app_constants.dart';
+import 'package:fox_anime/utils/app_constants.dart';
 import 'package:fox_anime/modules/layout/layout_controller.dart';
 import 'package:get/get.dart';
 

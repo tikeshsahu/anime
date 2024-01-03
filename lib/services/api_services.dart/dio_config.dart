@@ -2,7 +2,7 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:fox_anime/constants/app_constants.dart';
+import 'package:fox_anime/utils/app_constants.dart';
 
 class DioConfig {
   DioConfig._();

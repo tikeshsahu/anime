@@ -5,4 +5,5 @@ class AppRoutes {
   static const String profileRoute = "/profile";
   static const String animeDetailsRoute = "/anime-details";
   static const String videoPlayerRoute = "/video-player";
+  static const String searchRoute = "/search-animes";
 }

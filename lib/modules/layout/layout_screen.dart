@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fox_anime/constants/app_constants.dart';
+import 'package:fox_anime/utils/app_constants.dart';
 import 'package:fox_anime/modules/layout/layout_controller.dart';
 import 'package:fox_anime/modules/layout/widgets/nav_bar_widget.dart';
 import 'package:get/get.dart';
@@ -41,8 +41,10 @@ class LayoutScreen extends StatelessWidget {
                   index: 0,
                 ),
               ),
-              const SizedBox(width: AppConstants.normalPadding * 2),
-              Expanded(flex: 1, child: CustomizedNavBarWidget(title: "profile".tr, icon: layoutController.currentIndex == 1 ? Icons.person : Icons.person_outlined, index: 1)),
+              const SizedBox(width: AppConstants.normalPadding * 1.5),
+              Expanded(flex: 1, child: CustomizedNavBarWidget(title: "search".tr, icon: layoutController.currentIndex == 1 ? Icons.search : Icons.search_outlined, index: 1)),
+              const SizedBox(width: AppConstants.normalPadding * 1.5),
+              Expanded(flex: 1, child: CustomizedNavBarWidget(title: "profile".tr, icon: layoutController.currentIndex == 2 ? Icons.person : Icons.person_outlined, index: 2)),
               const SizedBox(width: AppConstants.normalPadding),
             ],
           ),

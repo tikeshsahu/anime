@@ -1,7 +1,6 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:fox_anime/components/popular.dart';
-import 'package:fox_anime/modules/chew.dart';
 import 'package:fox_anime/modules/video_player/video_player_controller.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';

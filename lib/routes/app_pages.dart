@@ -1,3 +1,5 @@
+import 'package:fox_anime/modules/search/search_binding.dart';
+import 'package:fox_anime/modules/search/search_screen.dart';
 import 'package:fox_anime/modules/video_player/video_player_binding.dart';
 import 'package:fox_anime/modules/video_player/video_player_sceen.dart';
 import 'package:get/get.dart';
@@ -19,6 +21,7 @@ class AppPages {
       bindings: [
         LayoutBinding(),
         HomeBinding(),
+        SearchBinding(),
         ProfileBinding(),
       ],
     ),
@@ -37,6 +40,11 @@ class AppPages {
       name: AppRoutes.videoPlayerRoute,
       page: () => const VideoPlayerScreen(),
       binding: VideoPlayerBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.searchRoute,
+      page: () => const SearchScreen(),
+      binding: SearchBinding(),
     ),
   ];
 }
